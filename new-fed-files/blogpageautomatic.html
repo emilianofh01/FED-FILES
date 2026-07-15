@@ -1,0 +1,475 @@
+<div class="internal-page news">
+	<div class="internal-page__header">
+		<div class="container">
+			<div class="internal-page__header-content">
+				<h1>News</h1>
+				<h5>Want to stay updated on all our developments? In the Bruckner magazine,
+					you can find information on promotions,
+					deals,
+					and news.</h5><a href="/wp-content/uploads/2024/09/Bruckner-Magazine-2024-Sept-Oct.pdf" target="_blank"
+					title="Bruckner Magazine 2024" class="internal-page__header-cta" rel="noopener"><span>Current Issue</span></a>
+			</div>
+		</div>
+	</div>
+	<div class="internal-page__content">
+		<div class="container">
+			<div>
+
+				<!-- aqui es donde ocurre la magia-->
+				<div class="blog-posts" id="blogs"></div>
+				
+
+
+			</div>
+		</div>
+		<div class="internal-page__cta-row">
+			<div class="container">
+				<div class="internal-page__cta-row-left">
+					<p>Bruckner's Parts Inventory</p>
+					<h3>With our extensive inventory,
+						we've got the parts you need!</h3>
+				</div>
+				<div class="internal-page__cta-row-right"><a href="/parts" title="Parts" class="internal-page__cta-row-cta"><span>See
+							Parts</span></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<style>
+	#main .blog-posts {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		padding-top: 30px
+	}
+
+	@media (min-width:768px) {
+		#main .blog-posts {
+			align-items: stretch
+		}
+	}
+
+	#main .blog-posts__post {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 15px 5px;
+		margin-bottom: 15px;
+		background-color: #f0f0f0;
+		width: 100%
+	}
+
+	@media (min-width:768px) {
+		#main .blog-posts__post {
+			align-items: flex-start;
+			width: calc(33.3333% - 15px)
+		}
+	}
+
+	@media (min-width:1200px) {
+		#main .blog-posts__post {
+			width: calc(25% - 25px);
+			margin: 15px 5px;
+			margin-bottom: 35px
+		}
+	}
+
+	#main .blog-posts__image {
+		width: 100%
+	}
+
+	@media (min-width:768px) {
+		#main .blog-posts__image {
+			transition: opacity ease-in-out 0.2s;
+			position: relative;
+			height: 200px;
+			display: block
+		}
+	}
+
+	@media (min-width:1200px) {
+		#main .blog-posts__image {
+			height: 250px
+		}
+	}
+
+	#main .blog-posts__image img {
+		width: 100%
+	}
+
+	#main .blog-posts a.blog-posts__more {
+		transition: all ease-in-out 0.2s !important;
+		display: block;
+		width: 130px;
+		background-color: #b61219;
+		color: white;
+		font-size: 12px;
+		border-radius: 4px;
+		text-align: center;
+		height: 25px;
+		line-height: 23px;
+		font-family: "Work Sans";
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		;
+	}
+
+	#main .blog-posts__text p {
+		padding: 0 15px;
+	}
+
+	@media (min-width:768px) {
+		#main .blog-posts__image img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: 50% 50%
+		}
+	}
+
+	@media (min-width:768px) {
+		#main .blog-posts__text {
+			margin-bottom: auto;
+			margin-top: 0
+		}
+	}
+
+	@media (min-width:992px) {
+		#main .blog-posts__text {
+			height: calc(100% - 200px)
+		}
+	}
+
+	@media (min-width:1200px) {
+		#main .blog-posts__text {
+			height: calc(100% - 250px)
+		}
+	}
+
+	#main .blog-posts__title {
+		padding-top: 7px;
+		text-align: center;
+		line-height: 1.2;
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 22px
+	}
+
+	@media (min-width:768px) {
+		#main .blog-posts__title {
+			margin-bottom: auto;
+			text-align: left
+		}
+	}
+
+	@media (min-width:992px) {
+		#main .blog-posts__title {
+			font-size: 24px !important;
+			margin-bottom: 15px;
+			padding-left: 15px;
+			padding-right: 15px
+		}
+	}
+
+	#main .blog p {
+		text-align: center;
+		padding: 0 5px 10px 5px;
+		word-break: break-word;
+	}
+
+	@media (min-width:768px) {
+		#main .blog p {
+			text-align: left
+		}
+	}
+
+	@media (min-width:992px) {
+		#main .blog p {
+			line-height: 1.5 !important;
+			padding: 0 15px 15px 15px
+		}
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(0.99);
+			box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7)
+		}
+
+		70% {
+			transform: scale(1);
+			box-shadow: 0 0 0 5px rgba(255, 0, 0, 0)
+		}
+
+		100% {
+			transform: scale(0.99);
+			box-shadow: 0 0 0 0 rgba(255, 0, 0, 0)
+		}
+	}
+
+	.posts-nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		justify-content: center;
+		padding-bottom: 30px
+	}
+
+	.posts-nav a {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: top ease-in-out 0.2s;
+		top: 0;
+		position: relative;
+		margin: 0 1px;
+		width: 30px;
+		height: 30px;
+		background-color: #d0d0d0;
+		color: #222;
+		font-weight: 700
+	}
+
+	.posts-nav a.active {
+		animation: pulse 1s infinite;
+		background-color: red;
+		color: white
+	}
+
+	.posts-nav a:hover {
+		top: -5px
+	}
+
+	body:not(.home) #main #content .internal-page__content div.container>h2 {
+		color: #333;
+		margin-bottom: 0;
+		padding-top: 10px
+	}
+
+	@media (min-width:992px) {
+		body:not(.home) #main #content .internal-page__content div.container>h2 {
+			font-size: 30px;
+			padding-top: 20px
+		}
+	}
+
+	body:not(.home) #main #content .internal-page__content div.container>h2 span {
+		font-family: Oswald;
+		color: black;
+		font-size: inherit
+	}
+
+
+	#main #primary #content .blog-posts {
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	@media (min-width:768px) {
+		#main #primary #content .blog-posts {
+			max-width: 100%;
+			justify-content: space-evenly
+		}
+	}
+
+	#main #primary #content .blog-posts__post {
+		transition: all ease-in-out 0.2s;
+		position: relative;
+		top: 0;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+	}
+
+	@media (min-width:768px) {
+		#main #primary #content .blog-posts__post {
+			width: calc(50% - 15px)
+		}
+	}
+
+	@media (min-width:992px) {
+		#main #primary #content .blog-posts__post {
+			width: calc(33.33333333% - 15px);
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: 10px;
+		}
+	}
+
+	#main #primary #content .blog-posts__post:hover {
+		top: -5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+	}
+
+	#main #primary #content .blog-posts__image {
+		position: relative;
+		aspect-ratio: 300 / 130;
+		width: 100%;
+		height: auto !important;
+		display: block
+	}
+
+	@media (min-width:768px) {
+		#main #primary #content .blog-posts__image {
+			aspect-ratio: 350 / 160
+		}
+	}
+
+	@media (min-width:992px) {
+		#main #primary #content .blog-posts__image {
+			aspect-ratio: 293 / 200
+		}
+	}
+
+	@media (min-width:1200px) {
+		#main #primary #content .blog-posts__image {
+			aspect-ratio: 360 / 200
+		}
+	}
+
+	#main #primary #content .blog-posts__image img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 50% 50%
+	}
+
+	#main #primary #content .blog-posts__text {
+		height: auto !important
+	}
+
+	#main #primary #content .blog-posts__text>p {
+		line-height: 1.5
+	}
+
+	@media (min-width:1200px) {
+		#main #primary #content .blog-posts__text>p {
+			font-size: 16px !important
+		}
+	}
+
+	#main #primary #content .blog-posts__title {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 5px;
+		text-align: left;
+		padding: 10px 15px 0 15px
+	}
+
+	@media (min-width:992px) {
+		#main #primary #content .blog-posts__title {
+			font-size: 20px !important
+		}
+	}
+
+	@media (min-width:1200px) {
+		#main #primary #content .blog-posts__title {
+			font-size: 22px !important
+		}
+	}
+
+	#main #primary #content .blog-posts__more {
+		display: none
+	}
+
+	body:not(.home) #main #content .internal-page__content div.container>h2 span {
+		color: #ff2c3b;
+	}
+</style>
+
+
+<script>
+  let postsContent = '';
+	let totalposts = 0;
+	let post_per_page = 15;
+	let pages;
+	let currpage = (window.location.href.indexOf("#") != -1) ? window.location.href.split("#")[1].split("=")[1] : 1;
+	let isvideo = false;
+
+	// reemplaza el 29 por la categoria correspondiente a tu sitio
+	fetch("/wp-json/wp/v2/posts?categories=29&filter[orderby]=date&order=desc")
+		.then(response => response.headers.get('X-WP-Total'))
+		.then(data => {
+			totalposts = data;
+			pages = Math.ceil(totalposts / post_per_page);
+			let navwrapper = jQuery("<div/>", { "class": "posts-nav" });
+
+			for (var i = 0; i < pages; i++) {
+				let clss = (currpage == (i + 1)) ? "active" : "";
+				
+				//aquo reemplaza /news-2 por el nombre de tu pagina 
+				let anchor = jQuery("<a/>", { "href": "/news-2#page=" + (i + 1), "text": (i + 1).toString(), "class": clss });
+				navwrapper.append(anchor);
+			}
+			jQuery(".internal-page__content > div").append(navwrapper);
+
+			//aqui tmb reemplaza el 29
+			fetch("/wp-json/wp/v2/posts?categories=29&filter[orderby]=date&order=desc&page=" + currpage + "&per_page=" + post_per_page)
+				.then(response => response.json())
+				.then(data => {
+					console.log(totalposts);
+					data.forEach(post => {
+						//aqui no hace falta mover nada
+						var btntext = (post.categories.includes(32)) ? "Watch Now" : "Read More";
+						if (post.featured_media != 0) {
+							fetch(`/wp-json/wp/v2/media/${post.featured_media}`)
+								.then(response => response.json())
+								.then(data => {
+									document.querySelector(`#blogs #post-${post.id} img`).setAttribute("src", `${data.guid.rendered}`);
+
+								}).catch(error => { console.log(error) });
+						}
+
+						var excerpt = "";
+						excerpt = (post.excerpt.rendered.length > 180) ? jQuery(post.excerpt.rendered).text().substring(0, 179) + "..." : jQuery(post.excerpt.rendered).text();
+						excerpt = "<p>"+excerpt+"</p>";
+
+
+						//en esta parte, cambia la ruta de la imagen de abajo por la ruta de una imagen placeholder
+						//que puedas usar para cuando los posts no tengan featured image
+						postsContent += `
+					<a href="${post.link}" title="${post.title.rendered}" class="blog-posts__post" id="post-${post.id}">
+							<div class="blog-posts__image">
+								
+								<img decoding="async" src="/wp-content/uploads/2023/10/news8.jpg" alt="${post.title.rendered}" />
+							</div>
+							<div class="blog-posts__text">
+									<h3 class="blog-posts__title">
+											${post.title.rendered}
+									</h3>
+									${excerpt}
+									
+							</div>
+					</a>
+				`;
+					});
+					document.getElementById('blogs').innerHTML = postsContent;
+					jQuery(".internal-page__content > div").prepend("<h2>Viewing <span>" + (currpage * post_per_page - (post_per_page - 1)) + "</span> to <span>" + (((currpage * post_per_page) > totalposts) ? totalposts : currpage * post_per_page) + "</span> of " + totalposts + " posts</h2>");
+				})
+				.catch(error => console.error(error));
+
+		})
+		.catch(error => console.error(error));
+
+
+
+
+</script>

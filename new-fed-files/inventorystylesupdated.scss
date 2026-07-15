@@ -1,0 +1,693 @@
+// Featured slider on inv detail
+body.single-wpp_manage_inventory{
+	div#wpp-manage-inventory-featured-slider-content{
+		.wpp-manage-inventory-featured-slider-slide .feature-title::after,
+		.wpp-manage-inventory-featured-slider-slide .feature-title{
+			background-color: $primary-color;;
+		}
+		.wpp-manage-inventory-featured-slider-slide img{
+			border-bottom-color: $primary-color;
+		}
+		.wpp-manage-inventory-featured-slider-slide .call-for-quote,
+		.wpp-manage-inventory-featured-slider-slide .our-price{
+			color:$primary-color;
+		}
+		
+		.wpp-manage-inventory-featured-slider-slide .view-button{
+			background-color: $primary-color;
+			border-color: $primary-color;;
+			&:hover{
+				background-color:$black;
+			}
+		}
+	}
+}
+
+// Styles for inv detail
+body.single-wpp_manage_inventory {
+	.inventory-single-container .inventory-single-title b,
+	#single-desc-btn:hover h2,
+	 #single-api-desc-btn:hover h2, 
+	 #single-info-btn:hover h2, 
+	 #single-specs-btn:hover h2,
+	.inventory-single-pricing .call-for-quote,
+	#single-desc-btn:hover h2,
+	#single-info-btn:hover h2,
+	#single-specs-btn:hover h2,
+	.inventory-single-pricing .msrp,
+	.inventory-single-payments .payments-more-info {
+		color: $primary-color;
+	}
+
+	.inventory-single-images .cta-financing,
+	.inventory-single-images-monthly-price .cta-financing {
+		background-color: $primary-color;
+		border-color: $primary-color;
+
+		&:hover {
+			background-color: $black;
+			;
+
+			svg {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.inventory-single-options .cta-e-price {
+		background-color: $primary-color;
+
+		&:hover {
+			background-color: $black;
+
+			svg {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.inventory-single-options .cta-button {
+		svg {
+			color: $primary-color;
+		}
+
+		&:hover {
+			svg {
+				color: $primary-color;
+			}
+		}
+	}
+
+	input[type="submit"] {
+		background-color: $primary-color;
+
+		&:hover {
+			background-color: $black;
+		}
+	}
+	a.list-share-btn,
+	.single-share-btn {
+		display: none;
+		;
+	}
+
+	.inventory-single-details .single-details-headers {
+		background-color: $primary-color;
+		;
+	}
+}
+
+// Styles for inv listing
+
+body.post-type-archive-wpp_manage_inventory{
+	main#main{
+		
+		#params-number-mobile #wpp-refresh-icon-mobile:hover,
+		#params-number-mobile #wpp-refresh-icon-mobile i,
+		#params-number-mobile .display-selected-filters,
+		#wpp-manage-inventory-cards-main-container .get-quote-btn:hover svg,
+		#wpp-manage-inventory-cards-main-container .card-savings-container .inventory-card-saved,
+		#wpp-manage-inventory-cards-main-container .container-cards .card-financing-button a:hover,
+		#wpp-manage-inventory-cards-main-container .container-cards .card-financing-button svg,
+		#wpp-manage-inventory-cards-main-container .container-cards .card-title:hover h2,
+		.wpp-inventory-list-container .right-button i,
+		.wpp-inventory-list-container .right-button svg,
+		.wpp-inventory-list-container .right-button-price:hover svg,
+		.wpp-inventory-list-container .wpp-manage-inventory-image-container .list-image-left:hover svg, 
+		.wpp-inventory-list-container .wpp-manage-inventory-image-container .list-image-right:hover svg,
+		.wpp-inventory-list-container .inventory-list-info .list-pricing .inventory-savings-container .inventory-list-saved,
+		.wpp-inventory-list-container .inventory-list-info .list-financing .cta-financing svg,
+		.wpp-inventory-list-container .list-share-btn svg,
+		.wpp-inventory-list-container .inventory-main-title:hover h2,
+		.wpp-inventory-list-container .featured-item p,
+		.wpp-inventory-manage-main-container .sortby-option::after,
+		.wpp-inventory-search-filters-container .inventory-search-form svg,
+		.wpp-inventory-template-content #params-number a:hover,
+		.wpp-inventory-template-content #params-number .display-selected-filters,
+		#inventory-cards-view-btn i,
+		#inventory-units-main-container .inventory-search-title:hover{
+			color:$primary-color;
+		}
+		.inventory-filters-mobile-show-filters-btn:hover,
+		#wpp-manage-inventory-cards-main-container .get-quote-btn,
+		#wpp-manage-inventory-cards-main-container .container-cards .inventory-card-feature .feature-title::after,
+		#wpp-manage-inventory-cards-main-container .container-cards .inventory-card-feature .feature-border,
+		#wpp-manage-inventory-cards-main-container .container-cards .inventory-card-feature .feature-title,
+		.wpp-inventory-list-container .right-button-price,
+		.wpp-inventory-list-container .wpp-manage-inventory-image-container .list-images-number,
+		.wpp-inventory-list-container .list-featured-icon,
+		#inventory-list-view-btn .list-view-icon,
+		.inventory-search-view-buttons .inventory-search-view-active,
+		#inventory-units-main-container .filter-units-container,
+		#inventory-units-main-container .active-filter p::after,
+		.noUi-connect{
+			background-color: $primary-color;;
+		}
+		#inventory-units-main-container a.apply-button{
+			background-color: $primary-color!important;
+			&:hover{
+				background-color: $white!important;
+				color:$primary-color!important;;
+			}
+		}
+		.wpp-inventory-template-content #params-number .display-selected-filters button:hover{
+			border-color:$primary-color;
+			color:$primary-color;
+		}
+		.inventory-filters-mobile-show-filters-btn .inventory-filters-icon .bar-1,
+		.inventory-filters-mobile-show-filters-btn .inventory-filters-icon .bar-2,
+		.inventory-filters-mobile-show-filters-btn .inventory-filters-icon .bar-3,
+		#inventory-units-main-container .inventory-units-header .inventory-filters-icon .bar-3,
+		#inventory-units-main-container .inventory-units-header .inventory-filters-icon .bar-2,
+		#inventory-units-main-container .inventory-units-header .inventory-filters-icon .bar-1,
+		#wpp-manage-inventory-cards-main-container .container-cards .inventory-card-feature,
+		.wpp-inventory-list-container .inventory-list-info .list-financing .cta-financing:hover,
+		.wpp-inventory-list-container .inventory-item-feature{
+			border-color: $primary-color;;
+		}
+		#wpp-manage-inventory-cards-main-container .get-quote-btn:hover,
+		.wpp-inventory-list-container .right-button-price:hover{
+			background-color: $black;;
+		}
+		.inventory-close-btn:hover{
+			color:$black;
+		}
+		.inventory-filters-mobile-show-filters-btn:hover .inventory-filters-icon .bar-1, 
+		.inventory-filters-mobile-show-filters-btn:hover .inventory-filters-icon .bar-2, 
+		.inventory-filters-mobile-show-filters-btn:hover .inventory-filters-icon .bar-3{
+			border-color:$black;
+		}
+	}
+}
+
+
+#wpp-manage-inventory-cards-main-container{
+	container-type:initial!important;
+}
+
+#inventory-units-main-container .filter-units-container .help-text a:hover{
+	color:white;
+}
+
+@media (min-width:640px) {
+  #wpp-manage-inventory-cards-main-container .container-cards .card-image-container a {
+    height: 200px;
+    display: block
+  }
+}
+
+@media (min-width:640px) {
+  #wpp-manage-inventory-cards-main-container .container-cards .inventory-card a img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%
+  }
+}
+
+.grecaptcha-badge {
+  width: 70px !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  left: 4px !important;
+}
+.grecaptcha-badge:hover {
+  width: 256px !important;
+}
+.wpp-manage-inventory-container.list-view .right-button-price{
+	background-color: $primary-color;;
+}
+a.list-share-btn{
+	display: none;;
+}
+#inventory-single-video-close:hover,
+#inventory-list-video-close:hover{
+	background-color:$primary-color;
+	border-color:$primary-color;
+}
+.wpp-manage-inventory-container.card-view .right-button-price:hover svg,
+.wpp-manage-inventory-container.card-view .list-financing a:hover,
+.wpp-manage-inventory-container.card-view .list-financing svg,
+.wpp-manage-inventory-container.list-view .featured-item p,
+.wpp-manage-inventory-container.list-view .right-button i,
+.wpp-manage-inventory-container.list-view .right-button svg,
+.wpp-manage-inventory-container.list-view .right-button-price:hover svg,
+.list-financing .cta-financing svg,
+.inventory-main-title:hover h2,
+.inventory-savings-container,
+.card-has-youtube-image:hover::before,
+.inventory-has-youtube-image:hover::before,
+.single-has-youtube-image:hover::before{
+	color:$primary-color;
+}
+.list-financing .cta-financing:hover{
+	border-color:$primary-color;
+}
+
+
+body.post-type-archive-wpp_manage_inventory main#main #wpp-manage-inventory-cards-main-container .get-quote-btn{
+	padding:0;
+	a.modal-link{
+		display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px 15px 10px;
+	}
+}
+.wpp-manage-inventory-container.card-view.inventory-item-feature::after,
+.wpp-manage-inventory-container.card-view.inventory-item-feature .featured-item,
+.wpp-manage-inventory-container.card-view.inventory-item-feature .featured-item::after,
+.wpp-manage-inventory-container.card-view .right-button-price,
+.wpp-manage-inventory-container.list-view .list-images-number,
+.wpp-manage-inventory-container.list-view .list-featured-icon{
+	background-color: $primary-color;;
+}
+.wpp-manage-inventory-container.list-view.inventory-item-feature{
+	border-left-color: $primary-color;;
+}
+
+
+.list-location::before{
+	color:$primary-color;
+}
+.wpp-manage-inventory-container.list-view .list-share-btn{
+	display: none;;
+}
+.pagination-controls-container .page-left-button,
+.pagination-controls-container .page-right-button,
+.pagination-controls-container .disable-page-button,
+.inventory-search-view-buttons .inventory-search-view-active .list-view-icon hr{
+	background-color: $primary-color;
+}
+.wpp-manage-inventory-container.card-view.inventory-item-feature,
+.wpp-manage-inventory-container.list-view.inventory-item-feature{
+	border-color: $primary-color;;
+}
+
+
+
+//Showroom Styles{
+	#main #content .inventory-single-pricing .showroom-call-for-quote,
+#main #content #inventory-showroom .showroom-item:hover p{
+	color:$primary-color;;
+}
+
+#main #content{
+	.wpp-manage-inventory-featured-slider-slide .view-button,
+	.inventory-single-images .cta-financing, .inventory-single-images-monthly-price .cta-financing{
+		background-color: $primary-color;;
+		border-color: $primary-color;;
+		&:hover{
+			background-color: $black;
+			svg{
+				color:$primary-color;;
+			}
+		}
+	}
+	.single-share-btn{
+		display: none;;
+	}
+	.wpp-manage-inventory-featured-slider-slide .our-price,
+	.inventory-single-options svg{
+		color:$primary-color;;
+	}
+	.inventory-single-options .cta-e-price{
+		background-color: $primary-color;;
+		svg{
+			color:$white;
+		}
+		&:hover{
+			background-color: $black;
+			svg{
+				color:$primary-color;;
+			};
+		}
+	}
+	.wpp-manage-inventory-featured-slider-slide img{
+		border-bottom-color: $primary-color;;;
+	}
+	.wpp-manage-inventory-featured-slider-slide .feature-title::after,
+	.wpp-manage-inventory-featured-slider-slide .feature-title,
+	.inventory-single-details .single-details-headers{
+		background-color: $primary-color;;;
+	}
+	.inventory-single-form input[type=submit]{
+		background-color: $primary-color;;
+		&:hover{
+			background-color: $black;;
+		}
+	}
+}
+
+body.single-wpp_manage_inventory {
+	#main {
+
+
+		
+		p.payments-more-info b {
+			position: relative;
+			@media(min-width:960px){
+				font-size:12px;	
+			}
+			
+			&:hover {
+				span#invdisclamier {
+					display: block;
+					;
+				}
+			}
+
+			span#invdisclamier {
+				display: none;
+				transition: opacity ease-in-out 0.3s;
+				position: absolute;
+				background: white;
+				border-radius: 5px;
+				box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+				margin: 0;
+				z-index: 2;
+				left: auto;
+				right: 0;
+				bottom: calc(100% + 15px);
+				padding-top: 0;
+				font-size: 14px;
+				text-transform: initial;
+				padding: 10px;
+				width: 100%;
+				text-align: center;
+				font-weight: 400;
+				color: #333;
+				font-family: "Work Sans";
+				width: 250px;
+				right: calc(50% - 125px);
+				bottom: 35px;
+				letter-spacing: 0;
+				line-height: 1.2;;
+				text-align: left;;
+				@media(min-width:951px) {
+					width: 300px;
+					right: calc(50% - 42px);
+					bottom: 32px;
+				}
+				@media(min-width:960px){
+					width: 300px;
+					right: -8px;
+					bottom: 31px;
+				}
+				
+				@media(min-width:$screen-xl-min) {
+					width: 300px;
+				}
+				&:before {
+					content: "";
+					position: absolute;
+					border-top: 20px solid white;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					left: auto;
+					right: calc(50% + 11px);
+					margin: auto;
+					width: 20px;
+					bottom: -20px;
+					filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.1));
+					z-index: 0;
+
+					@media(min-width:951px) {
+						right: calc(50% - 100px);
+					}
+
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					border-top: 20px solid white;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					left: auto;
+					right: calc(50% + 11px);
+					margin: auto;
+					width: 20px;
+					bottom: -20px;
+					z-index: 1;
+
+					@media(min-width:951px) {
+						right: calc(50% - 100px);
+					}
+				}
+			}
+		}
+	}
+}
+
+body.post-type-archive-wpp_manage_inventory{
+	#main{
+		p.list-payments{
+			i.fa.fa-info-circle {
+				font-size: 14px!important;
+				margin-left: 5px;
+				position: relative;;
+				color: $primary-color;
+				span#invdisclamier{
+					position: absolute;
+					display: none; 
+					color: black;
+					font-family: 'Work Sans';
+					font-weight: 400;
+					background: white;
+					z-index: 1;
+					padding: 10px;
+					box-shadow: 0 0 7px rgba(0,0,0,0.5);
+					width: 300px;
+					right: calc(50% - 152px);
+    			bottom: -180px;
+					line-height: 1.2;
+					letter-spacing: 0;;
+					&:after{
+						content: "";
+						position: absolute;
+						top: -10px;
+						left: calc(50% - 10px);
+						border-left: 10px solid transparent;
+						border-right: 10px solid transparent;
+						border-bottom: 10px solid white;
+					}
+					&:before{
+						content: "";
+						position: absolute;
+						top: -10px;
+						left: calc(50% - 10px);
+						border-left: 10px solid transparent;
+						border-right: 10px solid transparent;
+						border-bottom: 10px solid white;
+						filter: drop-shadow(0px -3px 2px rgba(0,0,0,0.2));
+					}
+				}
+				&:hover{
+					span#invdisclamier{
+						display: block;;
+					}
+				}
+			}
+		}
+	}
+}
+
+body.single-wpp_manage_inventory {
+	#main {
+
+
+		
+		p.payments-more-info b {
+			position: relative;
+			@media(min-width:960px){
+				font-size:12px;	
+			}
+			
+			&:hover {
+				span#invdisclamier {
+					display: block;
+					;
+				}
+			}
+
+			span#invdisclamier {
+				display: none;
+				transition: opacity ease-in-out 0.3s;
+				position: absolute;
+				background: white;
+				border-radius: 5px;
+				box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+				margin: 0;
+				z-index: 2;
+				left: auto;
+				right: 0;
+				bottom: calc(100% + 15px);
+				padding-top: 0;
+				font-size: 14px;
+				text-transform: initial;
+				padding: 10px;
+				width: 100%;
+				text-align: center;
+				font-weight: 400;
+				color: #333;
+				font-family: "Work Sans";
+				width: 250px;
+				right: calc(50% - 125px);
+				bottom: 35px;
+				letter-spacing: 0;
+				line-height: 1.2;;
+				text-align: left;;
+				@media(min-width:951px) {
+					width: 300px;
+					right: calc(50% - 42px);
+					bottom: 32px;
+				}
+				@media(min-width:960px){
+					width: 300px;
+					right: -8px;
+					bottom: 31px;
+				}
+				
+				@media(min-width:$screen-xl-min) {
+					width: 300px;
+				}
+				&:before {
+					content: "";
+					position: absolute;
+					border-top: 20px solid white;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					left: auto;
+					right: calc(50% + 11px);
+					margin: auto;
+					width: 20px;
+					bottom: -20px;
+					filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.1));
+					z-index: 0;
+
+					@media(min-width:951px) {
+						right: calc(50% - 100px);
+					}
+
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					border-top: 20px solid white;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					left: auto;
+					right: calc(50% + 11px);
+					margin: auto;
+					width: 20px;
+					bottom: -20px;
+					z-index: 1;
+
+					@media(min-width:951px) {
+						right: calc(50% - 100px);
+					}
+				}
+			}
+		}
+	}
+}
+
+body.post-type-archive-wpp_manage_inventory{
+	#main{
+		p.list-payments{
+			i.fa.fa-info-circle {
+				font-size: 14px!important;
+				margin-left: 5px;
+				position: relative;;
+				color: $primary-color;
+				span#invdisclamier{
+					position: absolute;
+					display: none; 
+					color: black;
+					font-family: 'Work Sans';
+					font-weight: 400;
+					background: white;
+					z-index: 1;
+					padding: 10px;
+					box-shadow: 0 0 7px rgba(0,0,0,0.5);
+					width: 300px;
+					right: calc(50% - 152px);
+    			bottom: -180px;
+					line-height: 1.2;
+					letter-spacing: 0;;
+					&:after{
+						content: "";
+						position: absolute;
+						top: -10px;
+						left: calc(50% - 10px);
+						border-left: 10px solid transparent;
+						border-right: 10px solid transparent;
+						border-bottom: 10px solid white;
+					}
+					&:before{
+						content: "";
+						position: absolute;
+						top: -10px;
+						left: calc(50% - 10px);
+						border-left: 10px solid transparent;
+						border-right: 10px solid transparent;
+						border-bottom: 10px solid white;
+						filter: drop-shadow(0px -3px 2px rgba(0,0,0,0.2));
+					}
+				}
+				&:hover{
+					span#invdisclamier{
+						display: block;;
+					}
+				}
+			}
+		}
+	}
+}
+.wpp-manage-inventory-container.list-view.inventory-item-feature::after,
+.wpp-manage-inventory-container.list-view.inventory-item-feature .featured-item .list-featured-icon,
+.wpp-manage-inventory-container.list-view.inventory-item-feature .featured-item::after,
+.wpp-manage-inventory-container.list-view.inventory-item-feature .featured-item{
+  @media(max-width:959px){
+		background-color: $primary-color;;;
+	}
+}
+a.cta-button.click-to-call i.fa,
+a#print-btn .fas,
+.wpp-manage-inventory-container.list-view .list-financing a:hover,
+.wpp-manage-inventory-container.list-view .list-financing svg{
+	color:$primary-color;
+}
+
+.single-featured-image-main,
+.wpp-manage-inventory-container.list-view .wpp-manage-inventory-image{
+	object-fit: contain;;
+}
+.wpp-manage-inventory-container.list-view .list-financing a{
+	transition: all ease-in-out 0.2s;
+	color:$black;
+	svg{
+		transition: color ease-in-out 0.2s;;
+		color:$primary-color;
+	}
+}
+.wpp-manage-inventory-container.list-view .list-financing a:hover{
+	color:$white;
+	svg{
+		color:$white;
+	}
+}
+
+
+
+
+
+
+
+
+

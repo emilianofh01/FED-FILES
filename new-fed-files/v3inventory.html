@@ -1,0 +1,157 @@
+<style>
+  /* inv v3 styles */
+
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container p.list-stock {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container .list-type {
+    margin-bottom: 0
+  }
+
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container p.list-stock {
+    margin-top: 0;
+    padding: 0
+  }
+
+  @media (max-width:959px) {
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container p.list-stock {
+      padding-left: 20px;
+      padding-top: 0;
+      font-size: 16px;
+      margin-top: 0
+    }
+  }
+
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container.list-view .inventory-right-buttons {
+    height: auto
+  }
+
+  @media (min-width:960px) {
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container.list-view .unit-specifications {
+      max-width: 100%
+    }
+  }
+
+  @media (min-width:960px) {
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .inventory-list-info .list-financing {
+      padding-right: 10px
+    }
+  }
+
+  @media (min-width:960px) {
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container.list-view .inventory-list-info {
+      padding-right: 15px
+    }
+  }
+
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container.list-view .spec-value {
+    font-size: 15px
+  }
+
+  @media (max-width:959px) {
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container.list-view .spec-value {
+      font-size: 14px;
+
+    }
+  }
+
+  @media (max-width:959px) {
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container.list-view .spec-name {
+      font-size: 14px
+    }
+  }
+
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container .list-pricing .list-price,
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container .list-pricing .list-sale-price {
+    min-width: initial;
+    margin-right: 5px
+  }
+
+  @media (max-width:959px) {
+
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .list-pricing .list-price,
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .list-pricing .list-sale-price {
+      font-size: 23px
+    }
+  }
+
+  @media (max-width:959px) {
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container .price-with-label {
+      margin: 1px 0;
+      justify-content: flex-start
+    }
+  }
+
+  @media (min-width:960px) {
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container .price-with-label:first-of-type {
+      margin-bottom: 3px
+    }
+  }
+
+  @media (max-width:959px) {
+
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container .ticket-box-sales,
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container .ticket-box {
+      margin: 0;
+      padding: 0
+    }
+  }
+
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container .card-view a.right-button.click-to-call {
+    width: 80%;
+    margin-top: 10px
+  }
+
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container .card-view p.list-stock {
+    padding-left: 20px
+  }
+
+  @media (min-width:960px) {
+    body.inventory-view-v3 #wpp-manage-inventory-list-main-container:not(.grids) .inventory-main-title h2 {
+      padding-right: 40px
+    }
+  }
+
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container .right-button svg,
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container .right-button i {
+    color: #00b3dc !important
+  }
+
+  body.inventory-view-v3 #wpp-manage-inventory-list-main-container .wpp-manage-inventory-container .price-with-label {
+    justify-content: flex-start !important;
+  }
+
+
+  @media (min-width:960px) {
+
+    body.inventory-single-view-v3 .inventory-single-payments,
+    body.inventory-single-view-v3 .inventory-single-images.single-price-label .inventory-single-pricing,
+    body.inventory-single-view-v3 .inventory-single-images-monthly-price.single-price-label .inventory-single-pricing {
+      padding-left: 15px !important
+    }
+  }
+
+  body.inventory-single-view-v3 .inventory-single-pricing .price-with-label {
+    justify-content: flex-start !important
+  }
+
+  body.inventory-single-view-v3 .single-pricing-saved-container.noborder .saved {
+    border: none !important
+  }
+
+  .wpp-manage-inventory-container .list-pricing {
+    overflow: visible !important;
+  }
+
+  /* end of v3 inv styles */
+</style>
+
+
+<script>
+  jQuery(".inventory-view-v3 .wpp-manage-inventory-container").each(function () {
+    jQuery(this).find(".inventory-right-buttons > p.list-stock").insertAfter(jQuery(this).find(".inventory-list-info >  p.list-type"));
+  });
+</script>

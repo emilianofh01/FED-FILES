@@ -1,0 +1,406 @@
+<div class="internal-page">
+
+  <div class="internal-page__header">
+    <h1 class="internal-page__title">Replace Title</h1>
+    <div class="internal-page__image">
+      <img src="REPLACEPATH" alt="pagenametitle">
+    </div>
+  </div>
+
+  <div class="internal-page__content">
+    <div class="container">
+
+    </div>
+
+    <div class="internal-page__cta-row">
+      <div class="container">
+        <a href="/replacepath" class="internal-page__cta" title="Replace Title">
+          REPALCECTATEXT
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<style>
+body:not(.home) {
+	#main {
+
+		#content {
+			padding: 0;
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-family: $font-titles;
+				color: $primary-color;
+			}
+			h2 {
+				@media(min-width:$screen-lg-min) {
+					font-size: 34px;
+				}
+
+			}
+			h3 {
+				@media(min-width:$screen-lg-min) {
+					font-size: 26px;
+				}
+
+			}
+
+			p,
+			span,
+			ul,
+			li {
+				font-family: $font-paragraph;
+				font-size: 16px;
+
+				@media(min-width:$screen-lg-min) {
+					font-size: 18px;
+				}
+
+			}
+
+			.list-three-col {
+				@include flex-col;
+				padding: 20px 0;
+
+				@media(min-width:$screen-md-min) {
+					@include flex-row;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					;
+				}
+
+				>* {
+					width: 100%;
+					margin-bottom: 20px;
+					;
+
+					@media(min-width:$screen-md-min) {
+						width: calc(33.33333% - 20px);
+						margin-bottom: 0;
+						;
+					}
+
+				}
+			}
+
+			.two-cols {
+				@include flex-col;
+				padding: 20px 0;
+
+				@media(min-width:$screen-md-min) {
+					@include flex-row;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					;
+					align-items: flex-start;
+					;
+				}
+
+				>div {
+					width: 100%;
+					margin-bottom: 20px;
+					;
+
+					@media(min-width:$screen-md-min) {
+						width: calc(50% - 20px);
+						margin-bottom: 0;
+						;
+					}
+
+				}
+			}
+
+			.internal-page {
+				font-family: $font-paragraph;
+				;
+
+				&__header {
+					@include container;
+					padding-bottom: 0;;
+					@media(min-width:$screen-md-min) {
+						padding-top: 50px;
+					}
+
+				}
+
+				&__title {
+					text-transform: uppercase;
+					text-align: center;
+					color: $primary-color;
+					font-weight: 700;
+
+					@media(min-width:$screen-md-min) {
+						text-align: left;
+						font-size: 28px;
+						;
+					}
+
+					@media(min-width:$screen-lg-min) {
+						font-size: 35px;
+					}
+
+					@media(min-width:$screen-xl-min) {
+						font-size: 40px;
+					}
+
+				}
+
+				&__image {
+					border-bottom: 5px solid $primary-color;
+					margin-bottom: 20px;
+					;
+
+					@media(min-width:$screen-xl-min) {
+						border-bottom-width: 7px;
+						;
+					}
+
+					img {
+						width: 100%;
+						display: block;
+						margin: 0 auto;
+						box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+					}
+				}
+
+				&__content {
+					div.container {
+						@include container;
+						padding-top: 0;
+						padding-bottom: 0;;
+						@media(min-width:$screen-md-min){
+							padding-top: 0;;
+						}
+						
+					}
+
+					.img-wrapper {
+						@include flex-col;
+						padding: 10px 0;
+
+						img {
+							max-width: 100%;
+							margin: 0 auto;
+							display: block;
+							width: auto;
+						}
+					}
+				}
+
+				&__cta-row {
+					@include flex-row;
+					justify-content: center;
+					padding: 0;
+
+					@media(min-width:$screen-md-min) {
+						padding: 0;
+					}
+
+					@media(min-width:$screen-lg-min) {
+					}
+
+				}
+
+				&__cta-row {
+					text-align: center;
+					;
+
+				}
+
+				&__cta {
+					transition: background-color ease-in-out 0.2s;
+					@include flex-row;
+					display: inline-flex;
+					;
+					padding: 10px 15px;
+					background-color: $primary-color;
+					color: $white;
+					font-family: $font-titles;
+					text-transform: uppercase;
+					text-decoration: none !important;
+					font-size: 20px;
+					line-height: 1.2;
+					;
+					text-align: center;
+					;
+					box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+					@media(min-width:$screen-lg-min) {
+						padding: 15px 20px;
+					}
+
+					&:hover {
+						background-color: $secondary-color;
+						;
+					}
+
+				}
+
+
+				.container {
+					padding: 0;
+
+					.three-cols {
+						@include flex-col;
+
+						@media(min-width:$screen-md-min) {
+							@include flex-row;
+							justify-content: space-between;
+							;
+						}
+
+						>div {
+							width: 100%;
+							margin-bottom: 10px;
+							text-align: center;
+							;
+
+							@media(min-width:$screen-md-min) {
+								width: calc(33.33333333% - 15px);
+								margin-bottom: 0;
+								;
+							}
+
+						}
+					}
+				}
+
+				.form-area {
+					input[type="submit"] {
+						transition: background-color ease-in-out 0.2s;
+						@include flex-row;
+						padding: 15px 15px;
+						background-color: $primary-color;
+						color: $white;
+						font-family: $font-paragraph;
+						text-transform: uppercase;
+						;
+						text-decoration: none !important;
+						font-size: 20px;
+						border-radius: 5px;
+						box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+						letter-spacing: 0;
+						;
+
+						@media(min-width:$screen-lg-min) {
+							padding: 18px 20px;
+							font-size: 26px;
+						}
+
+						&:hover {
+							background-color: $secondary-color;
+							;
+						}
+					}
+					.form-wrapper {
+						@include flex-col;
+
+						@media(min-width:$screen-md-min) {
+							@include flex-row;
+							flex-wrap: wrap;
+							;
+						}
+
+						h3 {
+							width: 100%;
+						}
+
+						&__field {
+							width: 100%;
+
+							@media(min-width:$screen-md-min) {
+								width: calc(50% - 10px);
+								margin-bottom: 0;
+								;
+							}
+
+							p {
+								@media(min-width:$screen-md-min) {
+									margin-bottom: 15px;
+								}
+
+							}
+
+							&.full {
+								@media(min-width:$screen-md-min) {
+									width: 100%;
+								}
+
+							}
+
+							input[type="text"],
+							input[type="tel"],
+							input[type="email"],
+							select,
+							textarea {
+								font-family: $font-paragraph;
+								font-size: 16px;
+							}
+
+							
+						}
+					}
+				}
+
+
+
+
+
+
+
+
+			}
+
+
+		}
+	}
+}
+.modal__container{
+form{
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: $font-titles;;
+		color: $primary-color;
+		margin-bottom: 10px;;
+		font-weight: 700;;
+	}
+	
+	p,
+	span,
+	ul,
+	li {
+		font-family: $font-paragraph;
+		font-size: 16px;
+
+		@media(min-width:$screen-lg-min) {
+			font-size: 18px;
+		}
+
+	}
+	p{
+		margin-bottom: 10px;
+	}
+	.one-half, .one-third, .two-thirds{
+		margin-bottom: 5px;
+	}
+}
+}
+</style>

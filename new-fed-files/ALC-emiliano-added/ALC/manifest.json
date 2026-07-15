@@ -1,0 +1,35 @@
+{
+  "content_scripts": [ {
+    "run_at": "document_end",
+    "js": [ "jquery-3.2.1.min.js", "jquery.highlight-4.js", "selection.js" ],
+    "matches": [ "<all_urls>" ]
+  } ],
+  "short_name": "FED Tools",
+  "name": "Fed Tools",
+  "version": "3.0",
+  "manifest_version": 3,
+  "description": "A Chrome extension that helps FED guys from DA to automate some tasks.",
+  "action": {
+    "default_title": "Click to open the tool",
+    "default_popup": "popup.html",
+    "default_icon": { "32": "logo64.png" }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Q" 
+      },
+      "description": "Open the compiler"
+    }
+  },
+  "host_permissions": ["*://*/*"],
+  "permissions": [ 
+    "tabs",
+    "notifications",
+    "http://*/*",
+    "https://*/*",
+    "scripting" 
+  ],
+  "icons": { "32": "logo64.png" }
+}
+

@@ -1,0 +1,191 @@
+<html>
+	<head>
+		<style>
+			body {
+				overflow: hidden; margin: 5px; 
+				padding: 0px; 
+				background: #1c1c1c;
+				color: #fafafa;
+				width: 300px; 
+				padding: 20px 25px;
+				overflow: hidden;
+				border-bottom:5px solid #1FC7F1;
+				margin-bottom: 0;
+				margin-right: -1px;
+				margin-left: -1px;;
+			}
+			body h3{
+				font-family: Consolas;
+				font-size: 22px;
+				text-transform: capitalize;
+				font-weight: 300;;
+			}
+			body h3 span{
+				font-size: 12px;
+				position: relative;
+				color: #bbb;
+				display: block;;
+			}
+			body .highlight-elems{
+				margin-bottom: 10px;
+			}
+			body .highlight-elems > span{
+				font-family: Consolas;
+				font-size: 13px;
+			}
+			body .highlight-elems > button{
+				transition: background-color ease-in-out 0.2s;
+				border: none;
+				background-color: #B40431;
+				color: white;
+				padding: 10px 15px;
+				text-transform: uppercase;
+				font-family: Consolas;
+				margin-left: 5px;
+			}
+			body .highlight-elems > button:hover{
+				cursor:pointer;
+				background-color: #DF013A;
+			}
+			body .highlight-elems > button:focus{
+				outline: none;
+			}
+			body .inventory-elems{
+				
+			}
+			body .inventory-elems > button{
+			    display: block;
+			    margin-right: 0;
+			    margin-left: auto;
+			    transition: all ease-in-out 0.2s;
+			    border: none;
+			    background-color: #1FC7F1;
+			    color: #2c2c2c;
+			    padding: 10px 32px;
+			    text-transform: uppercase;
+			    font-family: Consolas;
+					margin-left: auto;
+					margin-top: 15px;
+					text-transform: capitalize;
+					font-size: 16px;
+					font-weight: 300;
+					border-radius: 5px;
+			}
+			body .inventory-elems > button:hover{
+				cursor:pointer;
+				color:#fafafa;
+				background-color: #1192b3;
+			}
+			body .inventory-elems > button:focus{
+				outline: none;
+			}
+			body .inventory-elems > select{
+				transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
+				background-color: #3c3c3c;
+				border: none;
+				width: 200px;
+				margin-left: 10px;
+				height: 30px;
+				color: #fafafa;
+				font-family: Consolas;
+				font-size: 15px;
+				margin-left: 0;
+				margin-top: 7px;
+				border-radius: 5px;;
+				padding-left: 5px;;
+				padding-top: 7px;
+				padding-bottom: 7px;;
+			}
+			body .inventory-elems > select:hover{
+				cursor:pointer;
+				background-color: #4c4c4c;
+			}
+			body .inventory-elems > select:focus{
+				outline: none;
+				background-color: #6E6E6E;
+			}
+
+			body > .inventory-elems > input[type="number"]{
+				transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
+				background-color: #ccc;
+				border: none;
+				width: 200px;
+				margin-left: 10px;
+				height: 30px;
+				color: #444;
+				font-family: Consolas;
+				font-size: 15px;
+				margin-top: 10px;
+			}
+
+			body > .inventory-elems > input[type="number"]:hover{
+				cursor:pointer;
+				color:#f5f5f5;
+				background-color: #888;
+			}
+			body > .inventory-elems > h4{
+				font-family: Consolas;
+				font-size: 14px;
+				font-size: 20px;
+				font-weight: 300;
+				margin-bottom: 10px;
+			}
+
+			body > .inventory-elems > input[type="number"]:focus{
+				outline: none;
+				background-color: #6E6E6E;
+			}
+
+			body > .inventory-elems > input[type="radio"]{
+				margin-top: 15px;
+			}
+			body .fill-calendar > button{
+			    display: block;
+			    margin-right: 0;
+			    margin-left: auto;
+			    transition: background-color ease-in-out 0.2s;
+			    border: none;
+			    background-color: #FF8000;
+			    color: white;
+			    padding: 10px 32px;
+			    text-transform: uppercase;
+			    font-family: Consolas;
+			    margin-left: 162px;
+			    margin-top: 15px;
+			}
+			body .fill-calendar > button:hover{
+				cursor:pointer;
+				background-color: #DF3A01;
+			}
+			body .fill-calendar > button:focus{
+				outline: none;
+			}
+	
+	
+
+		</style>
+		<script src="jquery-3.2.1.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<h3>SASS Compiler<span>(3.0.0)</span></h3>
+		<div class="inventory-elems">
+			<h4>FED:</h4>
+			<select id="user-select">
+				<option value="none">Selecciona tu nombre</option>
+				<option value="jonathan">Jonathan Leon</option>
+				<option value="manuel">Manuel Hernandez</option>
+				<option value="david">David Duarte</option>
+				<option value="victor">Victor Rodriguez</option>
+				<option value="nava">Arturo Nava</option>
+				<option value="emiliano">Emiliano Fernandez</option>
+			</select>
+			<br>
+			<button id="gobtn">Go!</button>
+		</div>
+	</body>
+ 
+</html>
+
+
+
