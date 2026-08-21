@@ -811,6 +811,103 @@ Lo que son financing
 This e-mail was sent from a contact form on [_site_title] ([_site_url])
 ```
 
+## Mover tabs del detail 
+```
+jQuery(function ($) {
+
+    const order = [
+        "dealer-notes",
+        "description",
+        "info",
+        "specifications"
+    ];
+
+    const sections = {
+        description: {
+            button: "#single-api-desc-btn",
+            content: ".single-api-desc"
+        },
+
+        "dealer-notes": {
+            button: "#single-desc-btn",
+            content: ".single-desc"
+        },
+
+        info: {
+            button: "#single-info-btn",
+            content: ".single-info"
+        },
+
+        specifications: {
+            button: "#single-specs-btn",
+            content: ".single-specs"
+        }
+    };
+
+    function reorder() {
+
+        const $container = $(".inventory-single-details");
+
+        if (!$container.length) {
+            return;
+        }
+
+        const fragments = {};
+
+        // ------------------------------------------
+        // Capture each complete section FIRST
+        // ------------------------------------------
+
+        Object.keys(sections).forEach(function (name) {
+
+            const section = sections[name];
+
+            const $button = $container.find(section.button).first();
+            const $content = $container.find(section.content).first();
+
+            if (!$button.length || !$content.length) {
+                return;
+            }
+
+            // Get the HR while the original structure is intact
+            const $hr = $content.nextAll("hr").first();
+
+            const $fragment = $();
+
+            fragments[name] = {
+                button: $button,
+                content: $content,
+                hr: $hr
+            };
+        });
+
+        // ------------------------------------------
+        // Reinsert in requested order
+        // ------------------------------------------
+
+        order.forEach(function (name) {
+
+            const section = fragments[name];
+
+            if (!section) {
+                return;
+            }
+
+            $container.append(section.button);
+            $container.append(section.content);
+
+            if (section.hr.length) {
+                $container.append(section.hr);
+            }
+        });
+    }
+
+    // Run after the page has loaded
+    setTimeout(reorder, 500);
+
+});
+```
+
 ## Template para TyC y políticas de privacidad
 *Pedir de nuevo al otro lado*
 
