@@ -811,7 +811,7 @@ Lo que son financing
 This e-mail was sent from a contact form on [_site_title] ([_site_url])
 ```
 
-## Mover tabs del detail 
+## Cambiar orden de tabs del detail 
 ```
 jQuery(function ($) {
 
