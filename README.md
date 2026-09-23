@@ -244,6 +244,34 @@ optionsObject['industry'].hide()
 </script>
 ```
 
+## [Inv Detail] Modifica los label de los additional charges
+```
+<script>
+jQuery(document).ready(function ($) {
+
+    setTimeout(function () {
+
+        // Replace matching add-on labels without affecting new or undefined add-ons
+        const labelMap = {
+            'Freight': 'Document Fee',
+            'Total': 'Total'
+        };
+
+        $('.add-ons-amount-container .label').each(function () {
+            const $label = $(this);
+            const currentLabel = $.trim($label.text());
+
+            if (Object.prototype.hasOwnProperty.call(labelMap, currentLabel)) {
+                $label.text(labelMap[currentLabel]);
+            }
+        });
+
+    }, 100);
+
+});
+</script>
+```
+
 ## Script para activar el 360
 ```
 <script>
@@ -522,6 +550,8 @@ var $filterContainer = jQuery("#inventory-units-main-container");
   }
 }
 ```
+
+
 
 ## Featured Inventory a Swiper JS
 ## Por: Victor
