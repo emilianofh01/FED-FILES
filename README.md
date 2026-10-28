@@ -6,33 +6,61 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css"
 />
-
 <script type="module">
-  import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.js';
+  import PhotoSwipe from "https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.js";
   const images = [];
-
-  jQuery('.single-display-thumbnails img').each((i, e) => {
-    jQuery(e).attr('data-index', i);
-    images.push({
-      src: e.src,
-      width: e.naturalWidth,
-      height: e.naturalHeight,
+  if (jQuery(".single-display-thumbnails").length > 0) {
+    jQuery("#single-thumbnails-container .single-inventory-thumbnail").css(
+      "height",
+      "auto",
+    );
+    jQuery(".inventory-single-view-v5 #single-thumbnails-container").css(
+      "height",
+      "auto",
+    );
+    jQuery(".single-display-thumbnails img").each((i, e) => {
+      jQuery(e).attr("data-index", i);
+      images.push({
+        src: e.src,
+        width: e.width * 15,
+        height: e.height * 15,
+      });
     });
-  });
-
-  jQuery(document).on('click', '.single-featured-image-main', (e) => {
+    jQuery("#single-thumbnails-container .single-inventory-thumbnail").css(
+      "height",
+      "60px",
+    );
+    jQuery(".inventory-single-view-v5 #single-thumbnails-container").css(
+      "height",
+      "65px",
+    );
+  } else {
+    jQuery(".single-featured-image-container img").each((i, e) => {
+      jQuery(e).attr("data-index", i);
+      images.push({
+        src: e.src,
+        width: e.width * 1.2,
+        height: e.height * 1.2,
+      });
+    });
+  }
+  jQuery(document).on("click", ".single-featured-image-main", (e) => {
     e.preventDefault();
     e.stopPropagation();
     const currentIndex =
-      parseInt(jQuery('.single-thumbnail-active').attr('data-index')) || 0;
-
-    const pswp = new PhotoSwipe({
-      dataSource: images,
-      index: currentIndex,
-      initialZoomLevel: 'fit',
-      secondaryZoomLevel: 2.5,
-      maxZoomLevel: 5,
-    });
+      parseInt(jQuery(".single-thumbnail-active").attr("data-index")) || 0;
+    setTimeout(() => {
+      const pswp = new PhotoSwipe({
+        dataSource: images,
+        index: currentIndex,
+        initialZoomLevel: "fit",
+        secondaryZoomLevel: 1.5,
+        maxZoomLevel: 5,
+      });
+      pswp.init();
+    }, 0);
+  });
+</script>
 ```
 
 ## [Inventor Detail] Poner videos abajo de los thumbnails
